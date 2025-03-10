@@ -1,0 +1,23 @@
+
+#myName {
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    display: flex;        
+    font-size: 80px;
+    color: black;
+}
+
+.topMenu{
+    background-color: #333;
+    font-size: 30px;
+    color: white;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.topRightMenu{
+    text-align: center;
+    font-size: 20px;
+    color: black;
+}
