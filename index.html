@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -60,9 +60,15 @@
         <p class="section_text1">Hello, I'm</p>
         <h1 class="myName">Miguel Gonzalez</h1>
         <p class="section_text2">Frontend Developer</p>
-        <button class="btn btn-color-2" onclick="window.open()">
-          Download
+        
+        <div class="btn-container">
+        <button type="button" class="btn btn-outline-dark" onclick="window.open()">
+          Download CV
         </button>
+        <button type="button" class="btn btn-outline-dark" onclick="location.href='./#contact'">
+          Contact info
+        </button>
+        </div>
 
         <div id="social-container">
           <img
