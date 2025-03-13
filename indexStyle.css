@@ -97,3 +97,13 @@ section{
     transition: all 300ms ease;
     width: 8rem;
 }
+
+.section-container{
+    display: flex;
+    gap: 1rem;
+    padding-top: 3rem;
+}
+
+.about-details-container{
+    display: flex;
+}
