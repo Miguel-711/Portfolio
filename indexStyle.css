@@ -38,7 +38,7 @@ section{
     gap: 5rem;
 } 
 
-.myName {
+.title {
     font-size: 4rem;
     text-align:center ;
     justify-content: center;
@@ -98,12 +98,61 @@ section{
     width: 8rem;
 }
 
-.section-container{
-    display: flex;
-    gap: 1rem;
-    padding-top: 3rem;
+
+/* ABOUT */
+
+#about{
+    position: relative;
+}
+
+.about-containers{
+    gap: 2rem;
+    margin-bottom:2rem ;
+    margin-top: 2rem;
 }
 
 .about-details-container{
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.about-containers, .about-details-container {
     display: flex;
+}
+
+.about-pic{
+    border-radius: 2rem;
+}
+
+.arrow{
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+    height: 50px;
+    width: 50px;
+}
+
+.details-container{
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 1rem;
+    border: rgb(53,53, 53) 0.1rem solid;
+    border-color: rgb(163,163,163);
+    text-align: center;
+
+}
+
+.section-container{
+    display: flex;
+    gap: 4rem;
+    height: 80%;
+    padding: 1rem;
+}
+
+.section_pic-container{
+    height: 400px;
+    width: 400px;
+    margin-right: auto 0;
 }
