@@ -1,13 +1,23 @@
+html{
+    scroll-behavior: smooth;
+}
+
 nav {
     font-size: 30px;
     justify-content:space-evenly
 }
 
 #navName{
+    position:relative;
     text-decoration: none;
     color: white;
     font-size: 25px;
     padding-right: 2rem;
+}
+
+#navbarNav{
+    position:absolute;
+    right: 3rem;
 }
 
 #navName:hover{
@@ -81,8 +91,8 @@ section{
 }
 
 .icon{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 } 
 
 /* Buttons*/
@@ -195,3 +205,77 @@ section{
   article .icon {
     cursor: default;
   }
+
+  /*Projects Section*/
+
+  #projects{
+    position: relative;
+  }
+
+  .color-container{
+    color: rgb(163,163,163);
+    background: rgb(250, 250,250);
+
+  }
+
+  .project-img{
+    border-radius: 2rem;
+    width: 80%;
+    height: 80%;
+  }
+
+  .project-title{
+    margin: 1rem;
+    color: black;
+  }
+
+/* Contact */
+
+#contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.contact-info-upper-container{
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53,53,53) 0.1rem solid;
+    border-color: rgb(163,163,163);
+    background:rgb(250, 250,250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-info-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.contatct-info-container p{
+    font-size: larger;
+}
+
+.contatct-icon{
+    cursor: default;
+    height: 2rem;
+}
+
+.nav-link-container a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 5rem;
+    
+}
