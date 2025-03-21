@@ -1,20 +1,42 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="light">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>New Webstie</title>
-    <link rel="stylesheet" href="indexStyle.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-  </head>
 
-  <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New Webstie</title>
+  <link rel="stylesheet" href="indexStyle.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a id="navName" href="#profile">Miguel A. Gonzalez</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#profile">Home</a>
+            <a class="nav-link active" href="#About">About</a>
+            <a class="nav-link active" href="#experience">Experience</a>
+            <a class="nav-link active" href="#projects">Projects</a>
+            <a class="nav-link active" href="#resume">Resume</a>
+          </div>
+        </div>
+      </div>
+  </nav>
+
+
+
+
+  <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
       <div class="container-fluid">
         <a id="navName" href="#profile">Miguel A. Gonzalez</a>
         <button
@@ -48,249 +70,208 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </nav> -->
 
-    <section id="profile">
+  <section id="profile">
+    <div class="section_pic-container">
+      <img src="./Pics/Layer 0 Frame.png" alt="Miguel Gonzalez Pic" />
+    </div>
+
+    <div class="section_text">
+      <p class="section_text1">Hello, I'm</p>
+      <h1 class="title">Miguel Gonzalez</h1>
+      <p class="section_text2">Frontend Developer</p>
+
+      <div class="btn-container">
+        <button type="button" class="btn btn-outline-dark" onclick="window.open()">
+          Download CV
+        </button>
+        <button type="button" class="btn btn-outline-dark" onclick="location.href='./#contact'">
+          Contact info
+        </button>
+      </div>
+
+      <div id="social-container">
+        <img src="/Portfolio/Pics/1524231.webp" atl="My linkedIn Profile" class="icon"
+          onclick="location.href = 'https://www.linkedin.com/in/miguel-gonzalez-424440275/'" />
+        <img src="/Portfolio/Pics/githubIcon.png" atl="My github Profile" class="icon"
+          onclick="location.href = 'https://github.com/Miguel01198'" />
+      </div>
+    </div>
+
+  </section>
+
+  <section id="about">
+    <p class="section_text1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
       <div class="section_pic-container">
-        <img src="./Pics/Layer 0 Frame.png" alt="Miguel Gonzalez Pic" />
+        <img src="./Pics/20220607172046_IMG_0627-EDIT.jpg" alt="Profile pic" class="about-pic" />
       </div>
 
-      <div class="section_text">
-        <p class="section_text1">Hello, I'm</p>
-        <h1 class="title">Miguel Gonzalez</h1>
-        <p class="section_text2">Frontend Developer</p>
-
-        <div class="btn-container">
-          <button
-            type="button"
-            class="btn btn-outline-dark"
-            onclick="window.open()"
-          >
-            Download CV
-          </button>
-          <button
-            type="button"
-            class="btn btn-outline-dark"
-            onclick="location.href='./#contact'"
-          >
-            Contact info
-          </button>
-        </div>
-
-        <div id="social-container">
-          <img
-          src="/Portfolio/Pics/1524231.webp"
-            atl="My linkedIn Profile"
-            class="icon"
-            onclick="location.href = 'https://www.linkedin.com/in/miguel-gonzalez-424440275/'"
-          />
-          <img
-            src="/Portfolio/Pics/githubIcon.png"
-            atl="My github Profile"
-            class="icon"
-            onclick="location.href = 'https://github.com/Miguel01198'"
-          />
-        </div>
-      </div>
-      
-    </section>
-
-    <section id="about">
-      <p class="section_text1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section_pic-container">
-          <img
-            src="./Pics/20220607172046_IMG_0627-EDIT.jpg"
-            alt="Profile pic"
-            class="about-pic"
-          />
-        </div>
-
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./Pics/award-experience-icon-11.png"
-                alt="expericen icon"
-                class="icon"
-              />
-              <h3>Expericen</h3>
-              <p>2+ years <br />Frontend Developer</p>
-            </div>
-            <div class="details-container">
-              <img src="./Pics/49944.png" alt="education icon" class="icon" />
-
-              <h3>Education</h3>
-              <p>some degree <br />other degree</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam
-              asperiores dolorem dolor assumenda saepe nulla obcaecati commodi
-              mollitia ducimus omnis reprehenderit eveniet, velit nam quasi
-              necessitatibus sed explicabo. Hic nihil repellat impedit alias,
-              ducimus obcaecati officiis. Laborum nesciunt voluptate pariatur
-              esse nisi quibusdam fuga, quis, recusandae dolorem numquam enim
-              aspernatur?
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <img
-        src="/Portfolio/Pics/free-down-arrow-icon-download-in-svg-png-gif-file-formats--arrowhead-direction-user-interface-pack-icons-1502499.png"
-        class="arrow"
-        alt="arrow icon"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-
-    <section id="experience">
-      <p class="section_text1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
+      <div class="about-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img src="./Pics/checkmark.png" alt="Experience icon" class="icon"/>
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experience</p>
-                </div>
-              </article>
-              <article>
-                <img src="./Pics/checkmark.png" alt="Experience icon" class="icon"/>
-                <div>
-                  <h3>CSS</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img src="./Pics/checkmark.png" alt="Experience icon" class="icon"/>
-                <div>
-                  <h3>Javascript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-            </div>
+            <img src="./Pics/award-experience-icon-11.png" alt="expericen icon" class="icon" />
+            <h3>Expericen</h3>
+            <p>2+ years <br />Frontend Developer</p>
           </div>
-
           <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img src="./Pics/checkmark.png" alt="Experience icon" class="icon"/>
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img src="./Pics/checkmark.png" alt="Experience icon" class="icon"/>
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img src="./Pics/checkmark.png" alt="Experience icon" class="icon"/>
-                <div>
-                  <h3>Git</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-            </div>
-          </div>
+            <img src="./Pics/49944.png" alt="education icon" class="icon" />
 
+            <h3>Education</h3>
+            <p>some degree <br />other degree</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam
+            asperiores dolorem dolor assumenda saepe nulla obcaecati commodi
+            mollitia ducimus omnis reprehenderit eveniet, velit nam quasi
+            necessitatibus sed explicabo. Hic nihil repellat impedit alias,
+            ducimus obcaecati officiis. Laborum nesciunt voluptate pariatur
+            esse nisi quibusdam fuga, quis, recusandae dolorem numquam enim
+            aspernatur?
+          </p>
         </div>
       </div>
     </div>
-      <img
-        src="/Portfolio/Pics/free-down-arrow-icon-download-in-svg-png-gif-file-formats--arrowhead-direction-user-interface-pack-icons-1502499.png"
-        class="arrow"
-        alt="arrow icon"
-        onclick="location.href='./#projects'"
-      />
-    </section>
 
-    <section id="projects">
-      <p class="section_text1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="/Portfolio/Pics/DailyNote.png" alt="Project 1" class="project-img"> 
-            </div>
-            <h2 class="experience-sub-title project-title">DailyNote</h2>
-            <div class="button-container">
-              <button
-              type="button"
-              class="btn btn-outline-dark"
-              onclick="location.href=''"
-              >
-                Github
-              </button>
-              <button
-              type="button"
-              class="btn btn-outline-dark"
-              onclick="location.href='https://dailynotes.up.railway.app/'"
-              >
+    <img
+      src="/Portfolio/Pics/free-down-arrow-icon-download-in-svg-png-gif-file-formats--arrowhead-direction-user-interface-pack-icons-1502499.png"
+      class="arrow" alt="arrow icon" onclick="location.href='./#experience'" />
+  </section>
+
+  <section id="experience">
+    <p class="section_text1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./Pics/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Experience</p>
+              </div>
+            </article>
+            <article>
+              <img src="./Pics/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./Pics/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Javascript</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./Pics/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>PostgreSQL</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./Pics/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Node JS</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./Pics/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Git</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+    <img
+      src="/Portfolio/Pics/free-down-arrow-icon-download-in-svg-png-gif-file-formats--arrowhead-direction-user-interface-pack-icons-1502499.png"
+      class="arrow" alt="arrow icon" onclick="location.href='./#projects'" />
+  </section>
+
+  <section id="projects">
+    <p class="section_text1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="/Portfolio/Pics/DailyNote.png" alt="Project 1" class="project-img">
+          </div>
+          <h2 class="experience-sub-title project-title">DailyNote</h2>
+          <div class="button-container">
+            <button type="button" class="btn btn-outline-dark" onclick="location.href=''">
+              Github
+            </button>
+            <button type="button" class="btn btn-outline-dark"
+              onclick="location.href='https://dailynotes.up.railway.app/'">
               Live Demo
-              </button>
-            </div>
+            </button>
           </div>
         </div>
       </div>
-      <img
-        src="/Portfolio/Pics/free-down-arrow-icon-download-in-svg-png-gif-file-formats--arrowhead-direction-user-interface-pack-icons-1502499.png"
-        class="arrow"
-        alt="arrow icon"
-        onclick="location.href='./#contact'"
-      />
-    </section>
+    </div>
+    <img
+      src="/Portfolio/Pics/free-down-arrow-icon-download-in-svg-png-gif-file-formats--arrowhead-direction-user-interface-pack-icons-1502499.png"
+      class="arrow" alt="arrow icon" onclick="location.href='./#contact'" />
+  </section>
 
-    <section id="contact">
-      <p class="section_text1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img src="/Portfolio/Pics/email.png" alt="Email icon" class="icon contact-icon">
-          <p><a href="mailto:gonzalez98m@gmail.com">gonzalez98m@gmail.com</a></p>
-        </div>
-
-        <div class="contact-info-container">
-          <img src="/Portfolio/Pics/1524231.webp" alt="Email icon" class="icon contact-icon">
-          <p><a href="https://www.linkedin.com/in/miguel-gonzalez-424440275/">LinkedIn</a></p>
-        </div>
-
+  <section id="contact">
+    <p class="section_text1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="/Portfolio/Pics/email.png" alt="Email icon" class="icon contact-icon">
+        <p><a href="mailto:gonzalez98m@gmail.com">gonzalez98m@gmail.com</a></p>
       </div>
-    </section>
 
-    <footer>
-      <nav>
-        <div class="nav-link-container">
-          <ul class="nav-links">
-            <li><a href="#profile">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-    </footer>
-    
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous" 
-    ></script>
+      <div class="contact-info-container">
+        <img src="/Portfolio/Pics/1524231.webp" alt="Email icon" class="icon contact-icon">
+        <p><a href="https://www.linkedin.com/in/miguel-gonzalez-424440275/">LinkedIn</a></p>
+      </div>
 
-    <script src="index.js"></script>
-  </body>
+    </div>
+  </section>
+
+  <footer>
+    <nav>
+      <div class="nav-link-container">
+        <ul class="nav-links">
+          <li><a href="#profile">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <script src="index.js"></script>
+</body>
+
 </html>
