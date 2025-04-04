@@ -48,6 +48,19 @@
   }
   
   @media screen and (max-width: 600px) {
+    .nav-links{
+      display: flex;
+      flex-direction: row;
+      width: 350px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .section_pic-container{
+      height: 300px;
+      width: 300px;
+    }
+  
     #contact,
     footer {
       height: 40vh;
@@ -81,14 +94,10 @@
     .logo {
       font-size: 1.5rem;
     }
-    .nav-links {
-      flex-direction: column;
-      gap: 0.5rem;
-      text-align: center;
-    }
+
     .section__pic-container {
       width: auto;
-      height: 46vw;
+      height: 35vw;
       justify-content: center;
     }
     .section__text__p2 {

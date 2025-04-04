@@ -60,7 +60,7 @@ section{
     display: flex;
     height: 500px;
     width: 500px;
-    margin:auto 0;
+    margin: auto;
 }
 
 .section_text {
@@ -124,11 +124,13 @@ section{
 .about-details-container{
     justify-content: center;
     flex-direction: column;
+    margin-top: 10px;
 
 }
 
 .about-containers, .about-details-container {
     display: flex;
+    
 }
 
 .about-pic{
