@@ -187,6 +187,11 @@ section{
     justify-content: center;
     flex-direction: column;
   }
+   
+    #experience h3 {
+    font-size: 1.3rem; 
+  }
+
   
   .article-container {
     display: flex;
@@ -238,6 +243,7 @@ section{
     justify-content: center;
     flex-direction: column;
     height: 70vh;
+    margin-top: 25px;
 }
 
 .contact-info-upper-container{
@@ -268,6 +274,11 @@ section{
     height: 2rem;
 }
 
+.contact p {
+    text-decoration: none;
+    color: black;
+}
+
 .nav-link-container a{
     text-decoration: none;
     color: black;
@@ -280,4 +291,10 @@ section{
     gap: 1rem;
     padding-bottom: 1rem;
     
+}
+
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
 }

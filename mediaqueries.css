@@ -1,3 +1,22 @@
+@media screen and (max-width: 1600px) {
+    #profile {
+      height: 83vh;
+      margin-bottom: 6rem;
+    }
+    .about-containers {
+      flex-wrap: wrap;
+    }
+    #contact,
+    #projects {
+      height: fit-content;
+    }
+
+    #experience h3 {
+    font-size: 0.9rem; 
+  }
+}
+
+
 @media screen and (max-width: 1400px) {
     #profile {
       height: 83vh;
@@ -10,6 +29,10 @@
     #projects {
       height: fit-content;
     }
+
+    #experience h3 {
+    font-size: 0.9rem; 
+  }
   }
   
   @media screen and (max-width: 1200px) {
@@ -45,6 +68,10 @@
     .about-containers {
       margin-top: 0;
     }
+
+  #experience h3 {
+    font-size: 0.9rem;
+  }
   }
   
   @media screen and (max-width: 600px) {
@@ -90,6 +117,9 @@
     }
     .experience-sub-title {
       font-size: 1.25rem;
+    }
+    #experience h3 {
+    font-size: 0.9rem;
     }
     .logo {
       font-size: 1.5rem;
